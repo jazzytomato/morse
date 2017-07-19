@@ -1,4 +1,5 @@
 # Morse
+[![Build Status](https://circleci.com/gh/jazzytomato/morse/tree/master.svg?style=shield)](https://circleci.com/gh/jazzytomato/morse)
 
 This app is a CLI for encoding text to morse code and obfuscating the result. It has been developed as part of a code challenge (instructions below).
 
