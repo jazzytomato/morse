@@ -1,24 +1,23 @@
 # Morse
 
-FIXME: description
+This app is a CLI for encoding text to morse code and obfuscating the result. It has been developed as part of a code challenge (instructions below).
 
-## Installation
+I have written it in Clojure as a learning exercise, but the JVM slow startup time would not be ideal for this kind of interactive application. Alternatively, it could be compiled to JS and run with NodeJS.
+### Usage
 
-Download from http://example.com/FIXME.
+The program accepts an optional filename, if provided, it will output the result to output.txt
 
-## Usage
+Otherwise, you will be prompted for a string to encode.
 
-FIXME: explanation
+To run in dev mode:
 
-    $ java -jar morse-0.1.0-standalone.jar [args]
+    lein run [filename]
 
-## Options
+To compile and run a jar
 
-FIXME: listing of options this app accepts.
+    lein uberjar
+    java -jar target/uberjar/morse-0.1.0-standalone.jar [filename]
 
-## Examples
-
-...
 
 ## Premise
 You're competing in a battle on a far away planet and you're in some trouble. You need to send a distress call to your home base for
