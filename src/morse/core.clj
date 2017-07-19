@@ -1,4 +1,5 @@
 (ns morse.core
+  (:gen-class)
   (:require [clojure.edn :as edn]
             [clojure.string :as str]))
 
@@ -28,7 +29,7 @@
 
 (defn encode [s]
   (if (re-matches #"[a-zA-Z0-9\s\.,]*" s)
-    (obfuscate (morsify s))
+    (obfuscate (morsify (str/upper-case s)))
     (throw (ex-info "The input contains invalid characters" {}))))
 
 (defn -main [& args]
